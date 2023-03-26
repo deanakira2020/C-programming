@@ -54,7 +54,7 @@ int main()
     {
         int project_num = 0;
         printf("whichj project would you like to run\n");
-        printf("1. flip order of a number\n 2. Flip order of three-digit number\n ");
+        printf("1. flip order of a number\n 2. Flip order of three-digit number\n 4. Change time format from 24-hr to 12-hr\n 5. Change time from 12-hr to 24-hr\n 6. Compare two dates\n");
         project_num = getnum();
         getchar();
         switch (project_num)
@@ -63,9 +63,15 @@ int main()
             break;
         case 2: reversenum_3digit();
             break;
+        case 3: date();
+            break;
+        case 4: timeformat();
+            break;
+        case 5: timeformat2();
+            break;
+        case 6: comparedates();
+            break;
         }
-        
-        
 
     }
 
